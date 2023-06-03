@@ -1,0 +1,311 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+   
+}
+
+.navbar{
+    background-color: #65435f;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+   
+}
+.navbar .logo{
+    padding:0px 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.img img{
+   display: none;
+}
+.navbar .list{
+    display: flex;
+    align-items: center;
+}
+.navbar .list > ul{
+    display: flex;
+}
+
+.list >ul >li{
+    padding: 0px 15px;
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.list >ul >li:hover{
+   
+    animation: listAnimi 1s forwards;
+    
+}
+.list a{
+    color: white;
+    text-decoration: none;
+}
+@keyframes listAnimi{
+    100%{
+        background-color: rgb(156 162 90);
+        font-size: 1.4rem;
+        border-radius: 18px;
+    }
+}
+.hamburger{
+    display: none;
+
+}
+
+
+.myContent{
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     height: 60vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 10px 0px;
+}
+.typedjs{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+.myContent .info{
+    color: white;
+    
+}
+.myContent2{
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     height: 80vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     padding: 0px 40px;
+     
+}
+.myContent2 .projects{
+    display: flex;
+}
+.myContent2 #heading{
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+.projects .projhead{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.projects .project1 img{
+    width: 25vw;
+    height: 33vh;
+}
+.projects .project2 img{
+   
+    width: 25vw;
+    height: 33vh;
+} 
+.projects .project3 img{
+   
+    width: 25vw;
+    height: 33vh;
+}
+.projects .project1 img:hover{
+  
+    cursor: pointer;
+    animation: projectanimi 1s forwards;
+}
+.projects .project2 img:hover{
+   
+    cursor: pointer;
+    animation: projectanimi 1s forwards;
+   
+} 
+.projects .project3 img:hover{
+   
+   
+    cursor: pointer;
+    animation: projectanimi 1s forwards;
+    
+}
+@keyframes projectanimi{
+    100%{
+        width: 30vw;
+       height: 38vh;
+    }
+}
+.myinfo{
+    width: 80%;
+}
+.myinfo h1 {
+    font-size: 2rem;
+    color: white;
+}
+.myinfo p {
+    font-size: 1.5rem;
+    color: white;
+}
+.myexp{
+    color: white;
+}
+.myexp .sn{
+    padding: 5px 0px;
+}
+.sn .box1{
+    width:70vw;
+    height: 5px;
+    background-color: red;
+}
+.sn .box2{
+    width:70vw;
+    height: 5px;
+    background-color: rgb(0, 255, 47);
+}
+.sn .box3{
+    width:55vw;
+    height: 5px;
+    background-color: rgb(0, 13, 255);
+}
+.sn .box4{
+    width:55vw;
+    height: 5px;
+    background-color: rgb(255, 0, 204);
+}
+.sn .box5{
+    width:60vw;
+    height: 5px;
+    background-color: rgb(255, 140, 0);
+}
+.sn .box6{
+    width:40vw;
+    height: 5px;
+    background-color: rgb(41, 62, 5);
+}
+.sn .box7{
+    width:50vw;
+    height: 5px;
+    background-color: rgb(62, 1, 1);
+}
+
+.buttons{
+    padding: 20px 0px;
+}
+.buttons .btn{
+     background-color: rgb(156 162 90);
+     color: white;
+     font-size: 1rem;
+     padding: 5px;
+     border: 2px double black;
+     border-radius: 5px;
+     cursor: pointer;
+}
+.buttons .btn:hover{
+    
+    animation: btnanimi 1s forwards;
+}
+
+@keyframes btnanimi
+{
+    100%{
+        color: white;
+        font-size: 1.1rem;
+    }
+}
+
+
+.section-right img{
+    width: 575px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.section2{
+    background-color: orange;
+    background-image: url(bg.jpg);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.section2 #email,#phone{
+    font-size: 1.2rem;
+    color: white;
+}
+.section2 #sociallinks{
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+.section2 .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.section2 .social img{
+    width: 50px;
+    margin: 0px 5px;
+}
+.section2 .social img:hover{
+    animation: socialAnimi 1s forwards;
+}
+@keyframes socialAnimi{
+    100%{
+        width: 80px;
+    }
+}
+.bottom{
+    background-color: #65435f;
+    color: white;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Contact me  */
+
+#contact-box
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+#contact-box input,textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   
+}
+#submit
+{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.1rem;  
+    cursor: pointer;
+}

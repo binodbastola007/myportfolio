@@ -1,0 +1,132 @@
+@media screen and (max-width:720px){
+   
+
+    .navbar {
+        background-color: #65435f;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 45vw;
+        position: absolute;
+        transition: transform 0.3s ease-in;
+       
+    }
+    .navbarGo{
+         transform: translate(-443px , 0px);
+    }
+    .navbar .logo {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logo h3{
+        text-align: center;
+    }
+    .img img{
+        display: revert;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+    .navbar .list{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .list > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list >ul >li  {
+        padding: 27px 0px;
+
+    }
+    .list >ul >li :hover{
+   
+        animation: listAnimi 1s forwards;
+        
+    }
+    @keyframes listAnimi{
+        100%{
+            background-color: none;
+            font-size: 1.4rem;
+            border-radius: 18px;
+        }
+    }
+    .hamburger{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    
+    }
+    .ham img{
+        width: 30px;
+        position: relative;
+        top: 10px;
+    }
+    .cross img{
+        width: 60px;
+    }
+    .myContent{
+        height: 65vh;
+        padding-left: 2px;
+    }
+    .bottom{
+        height: 15vh;
+    }
+    .section-right img{
+        display: none;
+    }
+
+    .section2{
+        flex-direction: column;
+    }
+    .myinfo h1 {
+        font-size: 1rem;
+        color: white;
+    }
+    .myinfo p {
+        font-size: 0.8rem;
+        color: white;
+    }
+
+    .myContent2 #heading {
+        font-size: 1.2rem;
+    }
+   
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects .projhead {
+        font-size: 1rem;
+    }
+    .projects .project1 img {
+        display: none;
+    }
+    .projects .project2 img {
+        display: none;
+    }
+    .projects .project3 img {
+        display: none;
+    }
+   
+    #contact-box label {
+        font-size: 0.8rem;
+    }
+  
+    #contact-box input, textarea {
+        font-size: 0.8rem;
+    }
+    #contact-box form {
+        width: 100%;
+    }
+    .myContent2 #heading {
+        font-size: 1.1rem;
+    }
+
+}
